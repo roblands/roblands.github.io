@@ -31,13 +31,13 @@ body{
 }
 
 .pacman-derecha{
-    background-image: url(imagenes/pacman-derecha.png);
+    background-image: url(pacman-derecha.png);
     height: 38px;
     width: 38px;
     background-size: 38px 38px;
 }
 .pacman-derecha-cerrada{
-    background-image: url(imagenes/pacman-derecha-cerrado.png);
+    background-image: url(pacman-derecha-cerrado.png);
     height: 38px;
     width: 38px;
     background-size: 38px 38px;
@@ -46,13 +46,13 @@ body{
 
 
 .pacman-abajo{
-    background-image: url(imagenes/abajo.png);
+    background-image: url(abajo.png);
     height: 38px;
     width: 38px;
     background-size: 38px 38px;
 }
 .pacman-abajo-cerrado{
-    background-image: url(imagenes/pacman-abajo-cerrado.png);
+    background-image: url(pacman-abajo-cerrado.png);
     height: 38px;
     width: 38px;
     background-size: 38px 38px;
@@ -60,13 +60,13 @@ body{
 
 
 .pacman-izquierda{
-    background-image: url(imagenes/pacman-izquierda.png);
+    background-image: url(pacman-izquierda.png);
     height: 38px;
     width: 38px;
     background-size: 38px 38px;
 }
 .pacman-izquierda-cerrado{
-    background-image: url(imagenes/pacman-izquierda-cerrado.png);
+    background-image: url(pacman-izquierda-cerrado.png);
     height: 38px;
     width: 38px;
     background-size: 38px 38px;
@@ -74,13 +74,13 @@ body{
 }
 
 .pacman-arriba{
-    background-image: url(imagenes/pacman-arriba.png);
+    background-image: url(pacman-arriba.png);
     height: 38px;
     width: 38px;
     background-size: 38px 38px;
 }
 .pacman-arriba-cerrada{
-    background-image: url(imagenes/pacman-arriba-cerrada.png);
+    background-image: url(pacman-arriba-cerrada.png);
     height: 38px;
     width: 38px;
     background-size: 38px 38px;
