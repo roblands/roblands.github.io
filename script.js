@@ -42,6 +42,97 @@ posicion.classList.add("pacman-derecha");
 // map.setAttribute("style", "background: #F00;");
 
 let contador = 2;
+
+
+const cajaPadreBtns = document.querySelector(".div-2");
+const btnArriba = document.querySelector("#btn-arriba");
+const btnIzquierda = document.querySelector("#btn-izquierda");
+const btnAbajo = document.querySelector("#btn-abajo");
+const btnDerecha = document.querySelector("#btn-derecha");
+
+
+btnArriba.addEventListener("click", ()=>{
+    if(posicionExacta > 9){
+        remover();
+        posicion.classList.add("default");
+        posicionExacta -= 10;
+        posicion = tDM[posicionExacta];
+
+        if((contador % 2) == 0){
+            posicion.classList.add("pacman-arriba");
+        }
+        else if((contador % 2 == 1)){
+            posicion.classList.add("pacman-arriba-cerrada");
+        }
+    }
+    comprobarVictoria();
+});
+
+btnIzquierda.addEventListener("click", ()=>{
+    if((posicionExacta % 10) != 0){
+        remover();
+        posicion.classList.add("default");
+        posicionExacta -= 1;
+        posicion = tDM[posicionExacta];
+
+
+
+        
+        if((contador % 2) == 0){
+            posicion.classList.add("pacman-izquierda");
+        }
+        else if((contador % 2 == 1)){
+            posicion.classList.add("pacman-izquierda-cerrado");
+        }
+    comprobarVictoria();
+
+}
+});
+
+btnDerecha.addEventListener("click", ()=>{
+    if((posicionExacta % 10) != 9){
+        remover();
+        posicion.classList.add("default");
+        posicionExacta += 1;
+        posicion = tDM[posicionExacta];
+
+
+        
+        if((contador % 2) == 0){
+            posicion.classList.add("pacman-derecha");
+        }
+        else if((contador % 2 == 1)){
+            posicion.classList.add("pacman-derecha-cerrada");
+        }
+    comprobarVictoria();
+    }
+
+});
+btnAbajo.addEventListener("click", ()=>{
+    if(posicionExacta < 90){
+        remover();
+
+        posicion.classList.add("default");
+        posicionExacta += 10;
+        posicion = tDM[posicionExacta];
+
+
+
+        
+        if((contador % 2) == 0){
+            posicion.classList.add("pacman-abajo");
+        }
+        else if((contador % 2 == 1)){
+            posicion.classList.add("pacman-abajo-cerrado");
+        }
+    comprobarVictoria();
+        
+    }
+
+});
+
+
+
 window.addEventListener("keypress", (evnt)=>{
     if(evnt.key == "w"){
         if(posicionExacta > 9){
